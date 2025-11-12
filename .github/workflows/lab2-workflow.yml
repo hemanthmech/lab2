@@ -16,10 +16,10 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Exploring Workflow Dispatch Trigger"
+      - run: echo 'Exploring Workflow Dispatch Trigger'
 
   job2:
     runs-on: ubuntu-latest
     steps:
       - name: Printing Custom Message
-        run: echo "${{ github.event.inputs.custom_message }}"
+        run: echo 'Custom Message: ${{ github.event.inputs.custom_message }}'
